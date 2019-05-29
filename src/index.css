@@ -1,0 +1,425 @@
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-height: 100vh;
+  overflow-y: scroll;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+
+}
+
+p,
+a,
+h2 {
+  font-family: 'Raleway', sans-serif;
+
+}
+
+
+/*  ---------------------------------------- Navigation----------------------------------------*/
+nav {
+  display: flex;
+  flex-direction: row;
+  color: black;
+  justify-content: space-evenly;
+  width: 100%;
+  top: 0;
+}
+
+nav a {
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  letter-spacing: 3px;
+  width: 100%;
+  background: black;
+  text-align: center;
+  color: white;
+  width: 100%;
+  background: linear-gradient(to left, black 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 1.4s ease;
+}
+
+
+nav a:hover {
+  color: black;
+  background: white;
+  text-decoration: underline;
+  background-position: left bottom;
+  
+
+}
+
+/*  ---------------------------------------- Home ----------------------------------------*/
+
+.home {
+  display: flex;
+  flex-direction: row;
+  max-height: 100vh;
+}
+
+.whiteSide {
+  width: 50%;
+
+  background-color: white;
+  color: black;
+  text-align: right;
+  padding-top: 23%;
+  padding-right: 20px;
+
+}
+
+div .logo {
+  width: 48px;
+  z-index: 5;
+  margin-top: 30px;
+
+}
+
+.whiteSide .logo {
+  margin-top: 23%;
+  width: 50px;
+
+}
+
+.blackSide .logo {
+  margin-top: 15%;
+  width: 45px
+}
+
+
+.whiteSide,
+.blackSide {
+  letter-spacing: 25px;
+  font-size: 30px;
+  height: inherit;
+  height: 60vh;
+
+
+
+}
+
+.blackSide {
+  width: 50%;
+  background-color: black;
+  color: white;
+  text-align: left;
+  /* border: 2px solid black; */
+  padding-top: 27%;
+  padding-left: 20px;
+}
+
+/*  ---------------------------------------- My Work ----------------------------------------*/
+
+#container {
+
+  display: flex;
+  background: white;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+.projectElement p {
+  color: rgb(92, 143, 88);
+  background: rgba(167, 167, 184, 0.493);
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: bold;
+  margin: 5px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.tags {
+  margin: auto auto auto 5%;
+  align-content: center;
+  display: inline-block;
+  text-align: justify;
+  
+}
+
+
+
+.projectElement {
+  width: 370px;
+  height: 475px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px 1px rgb(211, 206, 206);
+  margin: 1% auto;
+}
+
+.projectElement:hover {
+  transform: scale(1.04)
+}
+
+.footer {
+  width: 100%;
+  height: 30px;
+  background-color: white;
+}
+
+.image img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  border-bottom: 3px solid black;
+  border-radius: 20px 20px 0 0;
+}
+
+div.image {
+  height: 75%;
+}
+
+div.info {
+  height: 25%;
+  border-radius: 50%;
+  border: 1px white;
+  background: black;
+  color: white;
+  width: 95px;
+  height: 95px;
+  text-align: center;
+  margin: -18% auto auto auto;
+  position: sticky;
+  line-height: 5px;
+  overflow: auto;
+  vertical-align:middle;
+display:table;
+ 
+
+}
+
+.info h2 {
+  margin-top: 40px;
+  font-size: 15px;
+  display:table-cell;
+vertical-align:middle;
+line-height: 20px;
+text-align: center;
+}
+
+
+/*  ---------------------------------------- About Me ----------------------------------------*/
+
+.container {
+  display: flex;
+  flex-direction: row;
+  margin: 2.5em;
+  flex-wrap: wrap;
+}
+
+.container>div {
+  flex: 1 0 50%;
+  padding: 10px;
+}
+
+.container>div:first-child {
+  flex: 0 1 35%;
+}
+
+.titel {
+  margin-left: 5%;
+}
+
+.me {
+
+  padding: 20px;
+  margin-bottom: 45px;
+  -webkit-box-shadow: 11px 11px 5px -2px rgba(8, 8, 8, 0.56);
+  -moz-box-shadow: 11px 11px 5px -2px rgba(8, 8, 8, 0.56);
+  box-shadow: 11px 11px 5px -2px rgba(8, 8, 8, 0.56);
+}
+
+.description {
+  margin-left: 5%;
+  margin-bottom: 45px;
+  padding: 20px;
+  -webkit-box-shadow: 11px 11px 5px -2px rgba(8, 8, 8, 0.56);
+  -moz-box-shadow: 11px 11px 5px -2px rgba(8, 8, 8, 0.56);
+  box-shadow: 11px 11px 5px -2px rgba(8, 8, 8, 0.56);
+}
+
+
+.me img {
+  border-radius: 80px;
+  display: block;
+  margin: auto;
+}
+
+ul li {
+  list-style: none;
+  border-bottom: solid 1px rgba(0, 0, 0, .1);
+  margin-bottom: 10px;
+  padding: 15px;
+  
+}
+
+
+
+.description p {
+  border-bottom: solid 1px rgba(0, 0, 0, .1);
+  padding-bottom: 25px;
+}
+
+.container div {
+  min-width: 350px;
+  height: 50%;
+}
+
+/*  ---------------------------------------- Timeline ----------------------------------------*/
+
+
+.containerTimeline {
+  background: white;
+  width: 70%;
+  margin: 0 auto;
+  display: block;
+  overflow: auto;
+  padding: 2%;
+  
+}
+.timelineElement {
+  overflow: hidden;
+  transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+  height: 60px;
+}
+
+.content hr:nth-of-type(2) {margin-top: 12px}
+.right-content,
+.content {
+  display: block;
+  width: 40%;
+  margin: 0 auto;
+  padding: 1% 2%;
+}
+
+.content {
+  border-right: 5px dotted #666;
+  text-align: right;
+}
+
+.content p {
+  margin: 150px 0 0;
+  border: 1.5px solid black;
+  padding: 15px;
+  border-radius: 5px;
+  background: black;
+  color: rgb(224, 215, 215);
+
+}
+
+.right-content p {
+  margin: 80px 0 150px;
+  background: white;
+  color: black;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1.5px solid black;
+}
+
+.content p:hover {
+  background: white;
+  color: black;
+
+
+}
+
+.content a:hover {
+  color: black;
+}
+
+
+
+.containerTimeline p {
+  -webkit-transition: all 0.7s ease-in-out;
+  -moz-transition: all 0.7 ease-in-out;
+  -ms-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+
+.content .more-padding {
+  padding-right: 100px;
+}
+
+.right-content .more-padding {
+  padding-left: 100px;
+}
+
+.content p span strong a { color: black;}
+.content p a {
+  color: white;
+}
+
+
+.timelineElement:nth-of-type(1):hover {
+  height: 200px;
+}
+.timelineElement:nth-of-type(9):hover {
+  height: 100px;
+}
+.timelineElement:nth-of-type(6):hover {
+  height: 100px;
+}
+
+.timelineElement:nth-of-type(3):hover {
+  height: 150px;
+}
+.description button:hover {
+  background-position: left bottom;
+  color: black;
+  border: 2px solid black;
+}
+
+
+.description button {
+  color: white;
+  position: relative;
+  background: black;
+  padding: 15px;
+  border-radius: 3px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: linear-gradient(to left, black 50%, white 50%);
+  background-size: 210% 100%;
+  background-position: right bottom;
+  transition: all 1s ease;
+
+}
+
+.expirienceLogos img:hover {
+  background: white;
+  border: 2px solid black;
+  transform: scale(1.3);
+}
+.expirienceLogos img {
+  width: 7%;
+  background: #5C8F58 ;
+  border: 2px solid #5C8F58;
+  opacity: 0.85;
+  padding: 7px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.expirienceLogos {
+  height: 350px;
+}
+
+.expirienceLogos span {
+  width: 100px;
+
+}
